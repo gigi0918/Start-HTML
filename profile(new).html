@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+	<title>個人小檔案</title>
+  </head>	
+  <body bgcolor="#c1ecf8">
+  
+    <center><img src="profile1.jpg"/></center>
+    
+    <form method="post">
+      <fieldset>
+        <legend>個人資訊</legend>
+        姓&nbsp;&nbsp;&nbsp;&nbsp;名：
+        <input type="text" name="username" size="20" required=""/><br/>
+        性&nbsp;&nbsp;&nbsp;&nbsp;別：
+        <input type="radio" checked="true" name="usersex" value="male"/>男
+        <input type="radio" name="usersex" value="female"/>女<br/>       
+        身&nbsp;&nbsp;&nbsp;&nbsp;高 : 
+        <input type="TEXT" size="20"/>(cm)<br />
+        體&nbsp;&nbsp;&nbsp;&nbsp;重 :
+        <input type="TEXT" size="20"/>(kg)<br />
+        住&nbsp;&nbsp;&nbsp;&nbsp;址 :
+        <input type="TEXT" size="60"/><br />
+        手機號碼 :
+        <input  type="tel" placeholder="請輸入您的手機號碼"  pattern="[0-9]{4}(\-[0-9]{6})" required="" size="20"/><br />
+        電子信箱 :
+        <input type="email" placeholder="請輸入您的電子郵件信箱" size="20"/><br />
+
+        
+        
+        最高學歷：
+        <select name="userschool" size="4">
+          <option value="高中以下">高中以下
+          <option value="大專院校">大專院校
+          <option value="碩士">碩士</option>
+          <option value="博士">博士</option>
+          <option value="其它">其它</option>
+        </select><br/>
+      </fieldset><br/>      
+      <fieldset>
+        <legend>其它資訊</legend> 
+        您喜歡下列哪些活動（可複選）？
+        <input type="checkbox" name="userinterest" value="閱讀"/>閱讀
+        <input type="checkbox" name="userinterest" value="打球"/>打球
+        <input type="checkbox" name="userinterest" value="逛街"/>逛街
+        <input type="checkbox" name="userinterest" value="聽音樂"/>聽音樂
+        <input type="checkbox" name="userinterest" value="水上運動"/>水上運動
+        <input type="checkbox" name="userinterest" value="旅行"/>旅行
+        <input type="checkbox" name="userinterest" value="電腦"/>電腦
+        <input type="checkbox" name="userinterest" value="看電影"/>看電影<br/> 
+        您對於使用臉書經營社群有何看法？<br/>
+        <textarea name="userthought" cols="50" rows="10"></textarea><br/>  
+        
+      </fieldset><br/>  
+      <input type="submit" value="傳送資料"/>   
+      <input type="reset" value="清除資料"/>                     
+    </form>        
+    </body> 
+</html>
