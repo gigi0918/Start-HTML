@@ -2,155 +2,125 @@
 <html>
   <head>
     <meta charset="utf-8"/>
-	<title>個人小檔案</title>
+  <title>個人小檔案</title>
+  
+ 
+  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   <style>
-  body{
-    background-image: url('assets/img/top_photo.jpeg');
-  }
-  </style>
-
-  <!-- 引用CSS的js -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    body{
+      background-image: url('assets/background.jpg');
+    }
+    </style>
 
   </head>	
   <body>
   
+    
     <form method="post">
       <fieldset>
+
         <legend>個人資訊</legend>
 
-    <div class="input-group mb-6">
-      <div class="input-group-prepend">
-        <span class="input-group-text" id="basic-addon3">姓&nbsp;&nbsp;&nbsp;&nbsp;名</span>
-    </div>
-    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" name="username" required="" >
-    </div><br>
-
-<div class="input-group-prepend">
-  <span class="input-group-text" id="basic-addon3">性&nbsp;&nbsp;&nbsp;&nbsp;別</span>
-
-  <div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="male"  name="usersex" checked="true">
-  <label class="form-check-label" for="inlineRadio1" >男</label>
-  </div>
-
-  <div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio" name="usersex"name="inlineRadioOptions" id="inlineRadio2" value="female">
-  <label class="form-check-label" for="inlineRadio2" >女</label>
-  </div>
+        <div class="input-group">
+          <span class="input-group-addon">姓名</span>
+          <input type="text"  name="username" size="20" required=""/><br/>
+        </div>
+        <br>
+        <div class="input-group">
+          <span class="input-group-addon">性別</span>
+          <input type="radio" checked="true" name="usersex" value="male"/>男
+          <input type="radio" name="usersex" value="female"/>女<br/>   
+        </div>
+        <br>
+        <div class="input-group">
+          <span class="input-group-addon">身高</span>
+          <input type="TEXT" size="20"/>(cm)<br />
+        </div>
+        <br>
+        <div class="input-group">
+          <span class="input-group-addon">體重</span>
+          <input type="TEXT" size="20"/>(kg)<br />
+        </div>
+        <br>
+        <div class="input-group">
+          <span class="input-group-addon">住址</span>
+          <input type="TEXT" size="60"/><br />
+        </div>
+        <br>
+        <div class="input-group">
+          <span class="input-group-addon">手機號碼</span>
+          <input  type="tel" placeholder="請輸入您的手機號碼"  pattern="[0-9]{4}(\-[0-9]{6})" required="" size="20"/><br />
+        </div>
+        <br>
+        <div class="input-group">
+          <span class="input-group-addon">電子信箱</span>
+          <input type="email" placeholder="請輸入您的電子郵件信箱" size="20"/><br />
+        </div>
+        <br>
+            
+ 
      
-  </div><br>
+        <div class="input-group">  
+          <label class="input-group-addon" for="name">最高學歷</label>   
+      
+          <select class="form-control" name="userschool"  >
+             <!--提示文字 -->
+            <option selected>請選擇</option>
+            <option value="高中以下">高中以下</option>
+            <option value="大專院校">大專院校</option>
+            <option value="碩士">碩士</option>
+            <option value="博士">博士</option>
+            <option value="其它">其它</option>
+          </select>
+        </div>
+        <br/>
+        
+   
+   
 
-      <div class="input-group mb-6">
-      <div class="input-group-prepend">
-        <span class="input-group-text" id="basic-addon3">身&nbsp;&nbsp;&nbsp;&nbsp;高</span>
+    <legend>其它資訊</legend> 
+        
+
+        <label for="name">您喜歡下列哪些活動（可複選）？</label>
+    <div>
+	    <label class="checkbox-inline">
+		    <input type="checkbox" id="inlineCheckbox1" value="option1"> 閱讀
+	    </label>
+    	<label class="checkbox-inline">
+	    	<input type="checkbox" id="inlineCheckbox2" value="option2"> 打球
+	    </label>
+    	<label class="checkbox-inline">
+        <input type="checkbox" id="inlineCheckbox3" value="option3"> 逛街
+      </label>  
+    	<label class="checkbox-inline">
+        <input type="checkbox" id="inlineCheckbox4" value="option4"> 聽音樂
+      </label>  
+    	<label class="checkbox-inline">
+        <input type="checkbox" id="inlineCheckbox5" value="option5"> 水上運動
+      </label>  
+      <label class="checkbox-inline">
+        <input type="checkbox" id="inlineCheckbox6" value="option6"> 旅行
+      </label>  
+      <label class="checkbox-inline">
+        <input type="checkbox" id="inlineCheckbox7" value="option7"> 看電影
+      </label>  
+    
     </div>
-    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">(cm)
-    </div><br>
-
-    <div class="input-group mb-6">
-      <div class="input-group-prepend">
-        <span class="input-group-text" id="basic-addon3" size="20">體&nbsp;&nbsp;&nbsp;&nbsp;重 </span>
-    </div>
-    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" size="20">(kg)
-    </div><br>
-
-     <div class="input-group mb-6">
-      <div class="input-group-prepend">
-        <span class="input-group-text" id="basic-addon3">住&nbsp;&nbsp;&nbsp;&nbsp;址</span>
-    </div>
-    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" size="60">
-    </div><br>
-
-    <div class="input-group mb-6">
-      <div class="input-group-prepend">
-        <span class="input-group-text" id="basic-addon3">手機號碼</span>
-    </div>
-    <input type="tel" class="form-control" id="basic-url" aria-describedby="basic-addon3" size="20"  pattern="[0-9]{4}(\-[0-9]{6})" required=""  placeholder="請輸入您的手機號碼" >
-    </div><br>
-
-
-     <div class="input-group mb-6">
-      <div class="input-group-prepend">
-        <span class="input-group-text" id="basic-addon3">電子信箱</span>
-    </div>
-    <input type="email" class="form-control" id="basic-url" aria-describedby="basic-addon3"  placeholder="請輸入您的電子郵件信箱" size="20">
-    </div><br>
-
-       <div class="input-group mb-3">
-  <div class="input-group-prepend">
-    <label class="input-group-text" for="inputGroupSelect01">最高學歷</label>
-  </div>
-  <select class="custom-select" id="inputGroupSelect01"  name="userschool">
-    <option selected>Choose...</option>
-    <option value="高中以下">高中以下</option>
-    <option value="大專院校">大專院校</option>
-    <option value="碩士">碩士</option>
-    <option value="博士">博士</option>
-      <option value="其它">其它</option>
-  </select>
-</div>
-
-       
-      </fieldset><br/>      
-      <fieldset>
-        <legend>其它資訊</legend> 
-        您喜歡下列哪些活動（可複選）？
-
-  <div class="form-check form-check-inline">
-  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" name="userinterest" value="閱讀">
-  <label class="form-check-label" for="inlineCheckbox1">閱讀</label>
-  </div>
-
-  <div class="form-check form-check-inline">
-  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" name="userinterest" value="打球">
-  <label class="form-check-label" for="inlineCheckbox1">打球</label>
-  </div>
-
-    <div class="form-check form-check-inline">
-  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" name="userinterest" value="逛街">
-  <label class="form-check-label" for="inlineCheckbox1">逛街</label>
-  </div>
-
-    <div class="form-check form-check-inline">
-  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" name="userinterest" value="聽音樂">
-  <label class="form-check-label" for="inlineCheckbox1">聽音樂</label>
-  </div>
-
- <div class="form-check form-check-inline">
-  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" name="userinterest" value="水上運動">
-  <label class="form-check-label" for="inlineCheckbox1">水上運動</label>
-  </div>
-
-  <div class="form-check form-check-inline">
-  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" name="userinterest" value="旅行">
-  <label class="form-check-label" for="inlineCheckbox1">旅行</label>
-  </div>
-
-
-  <div class="form-check form-check-inline">
-  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" name="userinterest" value="電腦">
-  <label class="form-check-label" for="inlineCheckbox1">電腦</label>
-  </div>
-
-    <div class="form-check form-check-inline">
-  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" name="userinterest" value="看電影">
-  <label class="form-check-label" for="inlineCheckbox1">看電影</label>
-  </div><br/> <br/>
+    <br>
+    
 
         您對於使用臉書經營社群有何看法？<br/>
         <textarea name="userthought" cols="50" rows="10"></textarea><br/>  
         
-      </fieldset><br/>  
-      <input type="submit"  class="btn btn-info" value="傳送資料"/>   
-      <input type="reset"  class="btn btn-danger" value="清除資料"/>                     
-    </form>        
-
-    <!-- 引用Bootstrap的js -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
+    </fieldset><br/>  
+  
+      <input type="submit" class="btn btn-info" value="傳送資料"/>    
+      <input type="reset" class="btn btn-danger" value="清除資料"/>                     
+    </form>   
+    
+    
     </body> 
 </html>
