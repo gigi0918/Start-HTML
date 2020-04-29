@@ -1,126 +1,145 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8"/>
+
+<head>
+  <meta charset="utf-8" />
   <title>個人小檔案</title>
-  
- 
-  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
-	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
-	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   <style>
-    body{
+    body {
       background-image: url('assets/background.jpg');
     }
-    </style>
+  </style>
 
-  </head>	
-  <body>
-  
-    
-    <form method="post">
-      <fieldset>
+</head>
 
-        <legend>個人資訊</legend>
+<body>
 
-        <div class="input-group">
-          <span class="input-group-addon">姓名</span>
-          <input type="text"  name="username" size="20" required=""/><br/>
-        </div>
-        <br>
-        <div class="input-group">
-          <span class="input-group-addon">性別</span>
-          <input type="radio" checked="true" name="usersex" value="male"/>男
-          <input type="radio" name="usersex" value="female"/>女<br/>   
-        </div>
-        <br>
-        <div class="input-group">
-          <span class="input-group-addon">身高</span>
-          <input type="TEXT" size="20"/>(cm)<br />
-        </div>
-        <br>
-        <div class="input-group">
-          <span class="input-group-addon">體重</span>
-          <input type="TEXT" size="20"/>(kg)<br />
-        </div>
-        <br>
-        <div class="input-group">
-          <span class="input-group-addon">住址</span>
-          <input type="TEXT" size="60"/><br />
-        </div>
-        <br>
-        <div class="input-group">
-          <span class="input-group-addon">手機號碼</span>
-          <input  type="tel" placeholder="請輸入您的手機號碼"  pattern="[0-9]{4}(\-[0-9]{6})" required="" size="20"/><br />
-        </div>
-        <br>
-        <div class="input-group">
-          <span class="input-group-addon">電子信箱</span>
-          <input type="email" placeholder="請輸入您的電子郵件信箱" size="20"/><br />
-        </div>
-        <br>
-            
+
+  <form method="post">
+    <fieldset>
+
+      <legend>個人資訊</legend>
+
+      <div class="input-group">
+        <span class="input-group-addon">姓名</span>
+        <input type="text" name="username" size="20" required="" /><br />
+      </div>
+      <br>
+      <div class="input-group">
+        <span class="input-group-addon">性別</span>
+        <input type="radio" checked="true" name="usersex" value="male" />男
+        <input type="radio" name="usersex" value="female" />女<br />
+      </div>
+      <br>
+      <div class="input-group">
+        <span class="input-group-addon">身高</span>
+        <input type="TEXT" size="20" />(cm)<br />
+      </div>
+      <br>
+      <div class="input-group">
+        <span class="input-group-addon">體重</span>
+        <input type="TEXT" size="20" />(kg)<br />
+      </div>
+      <br>
+      <div class="input-group">
+        <span class="input-group-addon">住址</span>
+        <input type="TEXT" size="60" /><br />
+      </div>
+      <br>
+      <div class="input-group">
+        <span class="input-group-addon">手機號碼</span>
+        <input type="tel" placeholder="請輸入您的手機號碼" pattern="[0-9]{4}(\-[0-9]{6})" required="" size="20" /><br />
+      </div>
+      <br>
+      <div class="input-group">
+        <span class="input-group-addon">電子信箱</span>
+        <input type="email" placeholder="請輸入您的電子郵件信箱" size="20" /><br />
+      </div>
+      <br>
+
+
+
+      <div class="input-group">
+        <label class="input-group-addon" for="name">最高學歷</label>
+
+        <select class="form-control" name="userschool">
+          <!--提示文字 -->
+          <option selected>請選擇</option>
+          <option value="高中以下">高中以下</option>
+          <option value="大專院校">大專院校</option>
+          <option value="碩士">碩士</option>
+          <option value="博士">博士</option>
+          <option value="其它">其它</option>
+        </select>
+      </div>
+      <br />
+
+
+
+
+      <legend>其它資訊</legend>
+
+
+      <label for="name">您喜歡下列哪些活動（可複選）？</label>
+      <div>
+        <label class="checkbox-inline">
+          <input type="checkbox" name="userinterest" id="inlineCheckbox1" value="閱讀"> 閱讀
+        </label>
+        <label class="checkbox-inline">
+          <input type="checkbox" name="userinterest" id="inlineCheckbox2" value="打球"> 打球
+        </label>
+        <label class="checkbox-inline">
+          <input type="checkbox" name="userinterest" id="inlineCheckbox3" value="逛街"> 逛街
+        </label>
+        <label class="checkbox-inline">
+          <input type="checkbox" name="userinterest" id="inlineCheckbox4" value="聽音樂"> 聽音樂
+        </label>
+        <label class="checkbox-inline">
+          <input type="checkbox" name="userinterest" id="inlineCheckbox5" value="水上運動"> 水上運動
+        </label>
+        <label class="checkbox-inline">
+          <input type="checkbox" name="userinterest" id="inlineCheckbox6" value="旅行"> 旅行
+        </label>
+        <label class="checkbox-inline">
+          <input type="checkbox" name="userinterest" id="inlineCheckbox7" value="看電影"> 看電影
+        </label>
+
+      </div>
+      <br>
+
+
+      您對於使用臉書經營社群有何看法？<br />
+      <textarea name="userthought" cols="50" rows="10"></textarea><br />
+
+    </fieldset><br />
+
+    <input type="submit" class="btn btn-info" id="send" value="傳送資料" onclick="check(this.form)" />
+    <input type="reset" class="btn btn-danger" value="清除資料" />
+  </form>
+
+  <script language="Javascript">
+   
+   var b = document.getElementById("send");
+        b.onclick=function(){
+         var a=document.getElementsByName("userinterest");
+         var selected=[];
+         for (var i=0; i<a.length; i++) {
+           if (a[i].checked) {
+             selected.push(a[i].value);
+             }
+           }
+         alert("您的興趣是 : " + selected.join());
+         };
+
+        
  
-     
-        <div class="input-group">  
-          <label class="input-group-addon" for="name">最高學歷</label>   
-      
-          <select class="form-control" name="userschool"  >
-             <!--提示文字 -->
-            <option selected>請選擇</option>
-            <option value="高中以下">高中以下</option>
-            <option value="大專院校">大專院校</option>
-            <option value="碩士">碩士</option>
-            <option value="博士">博士</option>
-            <option value="其它">其它</option>
-          </select>
-        </div>
-        <br/>
-        
-   
-   
+ </script>
+</body>
 
-    <legend>其它資訊</legend> 
-        
-
-        <label for="name">您喜歡下列哪些活動（可複選）？</label>
-    <div>
-	    <label class="checkbox-inline">
-		    <input type="checkbox" id="inlineCheckbox1" value="option1"> 閱讀
-	    </label>
-    	<label class="checkbox-inline">
-	    	<input type="checkbox" id="inlineCheckbox2" value="option2"> 打球
-	    </label>
-    	<label class="checkbox-inline">
-        <input type="checkbox" id="inlineCheckbox3" value="option3"> 逛街
-      </label>  
-    	<label class="checkbox-inline">
-        <input type="checkbox" id="inlineCheckbox4" value="option4"> 聽音樂
-      </label>  
-    	<label class="checkbox-inline">
-        <input type="checkbox" id="inlineCheckbox5" value="option5"> 水上運動
-      </label>  
-      <label class="checkbox-inline">
-        <input type="checkbox" id="inlineCheckbox6" value="option6"> 旅行
-      </label>  
-      <label class="checkbox-inline">
-        <input type="checkbox" id="inlineCheckbox7" value="option7"> 看電影
-      </label>  
-    
-    </div>
-    <br>
-    
-
-        您對於使用臉書經營社群有何看法？<br/>
-        <textarea name="userthought" cols="50" rows="10"></textarea><br/>  
-        
-    </fieldset><br/>  
-  
-      <input type="submit" class="btn btn-info" value="傳送資料"/>    
-      <input type="reset" class="btn btn-danger" value="清除資料"/>                     
-    </form>   
-    
-    
-    </body> 
 </html>
